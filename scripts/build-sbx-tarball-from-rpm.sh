@@ -18,7 +18,7 @@
 #
 # Usage:
 #   ./scripts/build-sbx-tarball-from-rpm.sh
-#   RELEASE_TAG=v0.49.2 ARCH=amd64 ./scripts/build-sbx-tarball-from-rpm.sh
+#   RELEASE_TAG=v0.50.0 ARCH=amd64 ./scripts/build-sbx-tarball-from-rpm.sh
 #
 # Output:
 #   dist/<release tag>/DockerSandboxes-linux-<arch>-rockylinux8.tar.gz
@@ -29,7 +29,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 
-RELEASE_TAG="${RELEASE_TAG:-v0.49.2}"
+RELEASE_TAG="${RELEASE_TAG:-v0.50.0}"
 ARCH="${ARCH:-amd64}"                       # amd64 | arm64 (Docker's naming)
 OUT_DIR="${OUT_DIR:-$PROJECT_DIR/dist/$RELEASE_TAG}"   # one folder per release: file names carry no version
 ROCKY_IMAGE="${ROCKY_IMAGE:-rockylinux:8}"

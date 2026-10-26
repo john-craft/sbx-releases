@@ -7,7 +7,7 @@ package manager. Some environments have neither. These tarballs are the RPM's co
 unmodified, so `sbx` can be extracted into a home directory without root.
 
 **Download:** [github.com/john-craft/sbx-releases/releases](https://github.com/john-craft/sbx-releases/releases).
-Release tags match Docker's (e.g. `v0.49.2`); each has `amd64` and `arm64` tarballs with `.sha256`
+Release tags match Docker's (e.g. `v0.50.0`); each has `amd64` and `arm64` tarballs with `.sha256`
 files and install steps in the notes.
 
 **What's inside:** only what Docker's RPM installs, nothing added. See

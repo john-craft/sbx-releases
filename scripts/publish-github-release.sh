@@ -14,7 +14,7 @@
 # neither is set and `gh` is logged in, its token is used.
 #
 # Usage:
-#   ./scripts/publish-github-release.sh                  # v0.49.2, amd64 + arm64
+#   ./scripts/publish-github-release.sh                  # v0.50.0, amd64 + arm64
 #   ./scripts/publish-github-release.sh --dry-run        # checks + notes, no API calls
 #   ./scripts/publish-github-release.sh --replace        # re-upload into an existing release
 #   RELEASE_TAG=v0.49.1 DIST_DIR=dist ARCHS=amd64 ./scripts/publish-github-release.sh
@@ -34,7 +34,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 
-RELEASE_TAG="${RELEASE_TAG:-v0.49.2}"
+RELEASE_TAG="${RELEASE_TAG:-v0.50.0}"
 ARCHS="${ARCHS:-amd64 arm64}"
 DIST_DIR="${DIST_DIR:-$PROJECT_DIR/dist/$RELEASE_TAG}"
 TARGET="${TARGET:-}"
